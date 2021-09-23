@@ -78,11 +78,11 @@ async def pyroalive(_, message: Message):
 **{custom_alive_msg}**
 
 
-**Nexa UserBot is Alive**
+**Hexxa UserBot is Alive**
     
     **Python Version:** `{python_version}`
     **Pyrogram Version:** `{pyrogram_version}`
-    **Nexa Userbot Version:** `{NEXAUB_VERSION}`
+    **Hexxa Userbot Version:** `{NEXAUB_VERSION}`
     **Uptime: `{uptime}`**
 
 
@@ -95,7 +95,7 @@ async def pingme(_, message: Message):
     start = datetime.now()
     end = datetime.now()
     ping_time = (end - start).microseconds / 1000
-    ping_msg = await e_or_r(nexaub_message=message, msg_text="`Processing...`")
+    ping_msg = await e_or_r(nexaub_message=message, msg_text="`Pinging...`")
     await e_or_r(nexaub_message=message, msg_text=f"**Pong:** `{ping_time} ms`", disable_web_page_preview=True)
 
 @nexaub_on_cmd(command="setalive", modlue=mod_file)
