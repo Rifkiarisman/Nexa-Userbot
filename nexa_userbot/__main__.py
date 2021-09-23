@@ -12,9 +12,9 @@ from config import Config
 
 async def main_startup():
     print("""
-|| Nexa Userbot ||
+|| Hexxa Userbot ||
 
-Copyright (c) 2021 Itz-fork
+Copyright (c) 2021 Kyy @Bujeedbang
 """
     )
     await NEXAUB.start()
