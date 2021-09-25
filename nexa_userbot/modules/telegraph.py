@@ -17,11 +17,11 @@ CMD_HELP.update(
         "telegraph": f"""
 **Telegraph,**
 
-  ✘ `telegraph` - To Paste Images/Text to Telegra.ph
+  ✘ `tg` - To Paste Images/Text to Telegra.ph
 
 **Example:**
 
-  ✘ `telegraph`,
+  ✘ `tg`,
    ⤷ Reply to a message that contains text/image/mp4 file  = `{Config.CMD_PREFIX}telegraph`
      Tip: While pasting text to telegra.ph you can send title with command
 """
@@ -57,7 +57,7 @@ async def upload_to_tgraph(file):
     return f"**Error:** {e}"
 
 
-@nexaub_on_cmd(command="telegraph", modlue=mod_file)
+@nexaub_on_cmd(command="tg", modlue=mod_file)
 async def me_goin_oflin(_, message: Message):
     tgraph_msg = await e_or_r(nexaub_message=message, msg_text="`Processing...`")
     r_msg = message.reply_to_message
